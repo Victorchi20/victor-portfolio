@@ -740,7 +740,11 @@ html{
 /* FOOTER SECTIONS */
 #footer{
     width: 100%;
+<<<<<<< HEAD
     min-height: 30vh;
+=======
+    height: 30vh;
+>>>>>>> ccec1a3c19bb8319b04231d90cf3f0609740e85f
     background-color: var(--second-bg-color);
     display: flex;
     align-items: center;
@@ -830,6 +834,7 @@ html{
 
 
 
+<<<<<<< HEAD
 /* RESPONSIVENESS */
 @media (max-width: 768px){
 
@@ -1103,3 +1108,11 @@ html{
         margin-right: 12rem;
     }
 }
+=======
+
+
+
+
+
+
+>>>>>>> ccec1a3c19bb8319b04231d90cf3f0609740e85f
