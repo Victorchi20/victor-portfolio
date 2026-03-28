@@ -893,7 +893,7 @@ html{
         /* overflow: hidden; */
     }
     body{
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
      #navbar-items{
