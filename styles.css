@@ -1000,6 +1000,7 @@ html{
 
     #About{
         padding: 3rem;
+        padding-bottom: 5rem;    
     }
     .about-txt{
         width: 100%;
