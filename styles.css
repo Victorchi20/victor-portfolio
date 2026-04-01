@@ -894,7 +894,7 @@ html{
         /* overflow: hidden; */
     }
     body{
-        overflow: hidden;
+        overflow-x: hidden;
         /* max-width: 100%; */
     }
 
