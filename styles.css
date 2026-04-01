@@ -890,12 +890,12 @@ html{
 
     html{
         font-size: 55%;
-        max-width: 100%;
+        /* max-width: 100%; */
         /* overflow: hidden; */
     }
     body{
-        overflow-x: hidden;
-        max-width: 100%;
+        overflow: hidden;
+        /* max-width: 100%; */
     }
 
      #navbar-items{
@@ -955,6 +955,12 @@ html{
     margin-top: 7rem;
     margin-bottom: 10rem;
     }
+    .hero-img-container img:hover{
+        height: initial;
+    }
+    .hero-img-container{
+        display: none;
+    }
     .pre-img{
         height: 100%;
         width: 100%;
@@ -1006,6 +1012,7 @@ html{
         flex-wrap: wrap;
         justify-content: center;
         gap: 2rem;
+        /* border: solid 1px red; */
     }
     .about-img p{
         text-align: center;
@@ -1105,6 +1112,29 @@ html{
     .m-div6{
         margin-right: 12rem;
     }
+
+
+
+
+    /* FORCE all overflow issues to stay inside viewport */
+
+
+
+
+#hero, 
+.hero-img-container, 
+.img-cont, 
+.service-img-container
+/* .projects-img-container, */
+ {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+
 }
 
 
@@ -1117,6 +1147,9 @@ html{
     .m-div4b{
         height: 45px;
         width: 170px;
+    }
+     body{
+        overflow-x: hidden;
     }
 
 }
