@@ -148,3 +148,30 @@ document.querySelectorAll("#navbar-items a").forEach(link => {
         nav.classList.remove("active");
     });
 });
+
+
+
+const loader = document.getElementById("page-loader");
+
+// Show loader when clicking links
+document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function (e) {
+        const href = this.getAttribute("href");
+
+        // ignore anchors (# links)
+        if (href.startsWith("#") || href === "") return;
+
+        e.preventDefault();
+
+        loader.classList.add("active");
+
+        setTimeout(() => {
+            window.location.href = href;
+        }, 500); // delay for smooth effect
+    });
+});
+
+// Hide loader when page fully loads
+window.addEventListener("load", () => {
+    loader.classList.remove("active");
+});
