@@ -603,6 +603,10 @@ html{
     cursor: pointer;
     /* padding: 0; */
 }
+.pr-2 a{
+    display: flex;
+    color: black;
+}
 .pr-2:hover{
     color: var(--text-color);
     background-color: var(--bg2-color);
